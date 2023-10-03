@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    grid-area: header;
+    justify-content: center;
+    background-color: #63B3ED;
+    color: #FFFFFF;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+header h1 {
+    font-size: 36px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #FFFFFF;
+} 
+
+.container {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 1.5fr 7fr 0.25fr;
+    grid-template-areas:
+    "header header"
+    "body sidebar"
+    "footer footer"
+    ;
+}
+
+
+p {
+    color: #2D3748;
+    font-size: 18px;
+}
+
+main {
+    grid-area: body;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    
+
+}
+
+.container img {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    
+
+}
+
+.blog1 img{
+    float: right;
+    border-radius: 50%;
+    margin: 15px;
+    width: 350px;
+    height: 300px;
+    
+}
+
+.blog2 img {
+    float: left;
+    border-radius: 25px;
+    margin: 15px;
+    width: 300px;
+    height: 250px;
+
+}
+
+.blog1 {
+    padding: 100px;
+}
+
+.blog1 h2 {
+    font-size: 32px;
+    color: #48BB78;
+}
+
+
+.blog1 h3 {
+    color: #718096;
+    margin-top: 15px;
+}
+
+
+.blog1 p {
+    margin-top: 15px;
+}
+
+.blog1::after {
+    content: "";
+    display: block;
+    border-top: 1px solid #ccc;
+    margin-top: 50px;
+}
+
+
+.blog2 {
+    padding: 100px;
+    margin-top: -125px;
+}
+
+
+.blog2 h2 {
+    font-size: 32px;
+    color: #48BB78;
+}
+
+
+.blog2 h3 {
+    color: #718096;
+    margin-top: 15px;
+}
+
+
+.blog2 p {
+    margin-top: 15px;
+}
+
+
+aside {
+    grid-area: sidebar;
+    padding: 100px;
+    display: grid;
+    grid-template-rows: repeat(3, 125px);
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    color: #4299E1;
+}
+
+.aboutme {
+    background-color: #e2e8f0;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.aboutme h3 {
+    color: #000000;
+}
+
+.socialmedia h3 {
+    color: #48BB78;
+}
+
+.archives h3 {
+    color: #48BB78;
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+    background-color: #2C5282;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    color: #FFFFFF;
+}
